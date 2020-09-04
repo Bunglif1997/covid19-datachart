@@ -55,7 +55,7 @@ const IndexPage = () => {
 
             </style>
             <h1 className="title ">
-                Covide-19 DEV.
+                Covide-19 DEV. By AF. 
                 </h1>
             <DataTable
                 title="COVID-19 Summary"

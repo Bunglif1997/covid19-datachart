@@ -1,8 +1,20 @@
 export default () =>  {
     return (
-        <div className="lds-ring">
+        
+        <div className="wapper">
             <style jsx>
-                {`
+             {`
+                    .wapper {
+                        width: 100%;
+                        height: 100vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center
+
+
+                    }
+
+               
                .lds-ring {
                 display: inline-block;
                 position: relative;
@@ -40,9 +52,10 @@ export default () =>  {
               }
               
                 `}
-                
-                </style>  
+                </style> 
+        <div className="lds-ring">
                 <div></div><div></div><div></div><div></div>
+                </div>
                 </div>
         
 
