@@ -15,6 +15,7 @@ const fetcher = url => fetch(url).then(r => r.json());
 import columns from '../components/Datatablecolumns';
 import DataChart from '../components/DataChart';
 import TimeSeriesChart from '../components/TimeSeriesChart';
+import Loading from '../components/Loading';
 
 
 const IndexPage = () => {
@@ -24,7 +25,7 @@ const IndexPage = () => {
 
 
     if (!data) {
-        return <p> Not found </p>
+        return <Loading />
     }
     if (error) {
         return <p> Error...</p>
@@ -44,6 +45,12 @@ const IndexPage = () => {
                 .title {
                     text-align: center;
                 }
+                .lds-dual-ring {
+                    display: inline-block;
+                    width: 80px;
+                    height: 80px;
+                  }
+                  
                 `}
 
             </style>
